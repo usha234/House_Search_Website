@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Details Form</title>
+ <link rel="stylesheet" href="adm.css">
+
+<body style="background-image: url('images/house.avif'); backdrop-filter: blur(15px);">
+
+<form action="insert.php" method="post">
+    <h2>House Details Form</h2>
+    <h3><b><label>Landmark</label></b></h3>
+    <input type="text" name="name" placeholder="Enter Landmark" required>
+
+   
+    <h3><b><label>Address</label></b></h3>
+    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+    <h3><b><label>Description</label></b></h3>
+    <textarea id="address" name="describes" placeholder="Describe the home" required></textarea>
+
+  
+    <h3><b><label>Number of rooms</label></b></h3>
+    <input type="int" name="rooms" placeholder="Enter number of rooms" required>
+
+
+    <h3><b><label>Handled by whom</label></b></h3>
+    <input type="radio" id="owner" name="handled" value="owner">
+    <label>Owner</label><br>
+    <input type="radio" id="broker" name="handled" value="broker">
+    <label>Broker</label><br>
+
+    <h3><b><label>Buy or rent</label></b></h3>
+
+    <input type="radio" id="buy" name="buyorrent" value="buy">
+    <label>Buy</label><br>
+    <input type="radio" id="rent" name="buyorrent" value="rent">
+    <label>Rent</label><br>
+
+
+
+
+    <h3><b><label>City</label></b></h3>
+    <input type="text" name="city" placeholder="Enter City" required>
+   
+    <h3><b><label>Mobile</label></b></h3>
+    <input type="text" name="mobile" placeholder="Enter mobile number" required>
+
+
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
